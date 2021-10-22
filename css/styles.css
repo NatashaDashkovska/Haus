@@ -112,7 +112,6 @@ body {
   font-size: 12px;
   line-height: 1.17;
 
-  text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
 
@@ -173,7 +172,6 @@ body {
   font-size: 14px;
   line-height: 1.5;
 
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -181,8 +179,86 @@ body {
   font-size: 16px;
   line-height: 1.5;
 
-  text-align: center;
   text-transform: capitalize;
 
   color: #8a8a8a;
+}
+
+/* Article */
+
+.article-title {
+  font-family: Tinos, serif;
+
+  font-size: 64px;
+  line-height: 1.25;
+}
+
+.article {
+  font-size: 18px;
+  line-height: 1.78;
+}
+
+.article-btn {
+  font-size: 12px;
+  line-height: 1.5;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: var(--primary-text-color);
+
+  text-decoration: none;
+}
+
+/* Contacts */
+
+.contacts-section {
+  background-color: var(--primary-text-color);
+  color: var(--light-text-color);
+}
+
+.contacts-title {
+  font-family: Tinos, serif;
+
+  font-size: 55px;
+  line-height: 1.45;
+}
+
+.contacts-text {
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.spotify-link {
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: var(--primary-text-color);
+  background-color: var(--light-text-color);
+
+  text-decoration: none;
+}
+
+.contacts-links__title {
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.contacts-links {
+  list-style-type: none;
+}
+
+.contacts-link {
+  font-size: 12px;
+  line-height: 1.5;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: var(--light-text-color);
+
+  text-decoration: none;
 }
