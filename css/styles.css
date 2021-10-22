@@ -1,0 +1,65 @@
+:root {
+  --light-text-color: #ffffff;
+  --hero-background-color: #996b60;
+  --primary-text-color: #000000;
+  --btn-color: #191919;
+  --footer-links-color: rgba(255, 255, 255, 0.6);
+  --secondary-text-color: #8a8a8a;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+}
+
+/* Header */
+
+.header {
+  background-color: var(--hero-background-color);
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-list a {
+  color: var(--light-text-color);
+  font-size: 12px;
+  line-height: 1.5;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Hero */
+
+.hero-section {
+  background-color: var(--hero-background-color);
+}
+
+.hero-title {
+  font-family: Tinos, serif;
+  font-size: 73px;
+  line-height: 1.32;
+
+  color: var(--light-text-color);
+}
+
+.hero-text {
+  font-size: 18px;
+  line-height: 1.78;
+
+  color: var(--light-text-color);
+}
+
+.hero-btn {
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
