@@ -122,3 +122,67 @@ body {
 
   text-decoration: none;
 }
+
+/* Advantages */
+
+.advantages-title {
+  font-family: Tinos, serif;
+
+  font-size: 53px;
+  line-height: 1.51;
+}
+
+.advantages-text {
+  font-size: 18px;
+  line-height: 1.78;
+}
+
+.advantages-list {
+  list-style-type: none;
+}
+
+.advantages-item__title {
+  font-family: Tinos, serif;
+
+  font-size: 30px;
+  line-height: 1.47;
+}
+
+.advantages-item__text {
+  font-size: 18px;
+  line-height: 1.78;
+}
+
+/* Buyers reviews */
+
+.buyers-reviews__section {
+  background-color: var(--primary-text-color);
+  color: var(--light-text-color);
+}
+
+.buyers-reviews__list {
+  list-style-type: none;
+}
+
+.review {
+  font-size: 18px;
+  line-height: 1.78;
+}
+
+.reviewer {
+  font-size: 14px;
+  line-height: 1.5;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reviewer-title {
+  font-size: 16px;
+  line-height: 1.5;
+
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #8a8a8a;
+}
