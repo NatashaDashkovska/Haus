@@ -13,17 +13,72 @@ body {
   color: var(--primary-text-color);
 }
 
+/* Utilites */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1350px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  outline: 1px solid tomato;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* Header */
 
 .header {
   background-color: var(--hero-background-color);
+  display: flex;
 }
 
 .nav-list {
   list-style-type: none;
+  display: flex;
+  align-items: center;
+
+  outline: 1px solid tomato;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  outline: 1px solid tomato;
 }
 
 .nav-list a {
+  display: block;
+  padding-top: 38px;
+  padding-bottom: 38px;
+
   color: var(--light-text-color);
   font-size: 12px;
   line-height: 1.5;
@@ -38,10 +93,47 @@ body {
   color: var(--primary-text-color);
 }
 
+.nav-account__list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  outline: 1px solid tomato;
+}
+
+.nav-account__list a {
+  display: block;
+  padding-top: 38px;
+  padding-bottom: 38px;
+
+  color: var(--light-text-color);
+  font-size: 12px;
+  line-height: 1.5;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.nav-account__item:not(:last-child) {
+  margin-right: 60px;
+}
+.logo {
+  margin-top: 25px;
+}
+
 /* Hero */
 
 .hero-section {
   background-color: var(--hero-background-color);
+  display: flex;
+}
+
+.hero {
+  display: flex;
 }
 
 .hero-title {
@@ -56,11 +148,15 @@ body {
 .hero-text {
   font-size: 18px;
   line-height: 1.78;
+  margin-bottom: 46px;
+  margin-top: 0px;
 
   color: var(--light-text-color);
 }
 
 .hero-btn {
+  padding: 18px 52px 20px;
+
   font-size: 12px;
   line-height: 1.17;
 
@@ -80,6 +176,12 @@ body {
   color: var(--light-text-color);
   background-color: var(--primary-text-color);
   border: 1px solid var(--primary-text-color);
+}
+
+.hero-block {
+  margin-left: 60px;
+  margin-top: 312px;
+  margin-bottom: 34px;
 }
 
 /* Reviews */

@@ -18,34 +18,39 @@
   </head>
   <body>
     <header class="header">
-      <!-- <img src="./images/hero.jpg" alt="" /> -->
-      <nav>
+      <nav class="nav container">
         <ul class="nav-list">
-          <li><a href="">shop</a></li>
-          <li><a href="">membership</a></li>
-          <li><a href="">our story</a></li>
+          <li class="nav-item"><a href="">shop</a></li>
+          <li class="nav-item"><a href="">membership</a></li>
+          <li class="nav-item"><a href="">our story</a></li>
         </ul>
-        <a href="/"><img src="./images/logo.svg" alt="" /></a>
+        <a class="logo" href="/"><img src="./images/logo.svg" alt="" /></a>
+
+        <ul class="nav-account__list">
+          <li class="nav-account__item"><a href="">Newsletter</a></li>
+          <li class="nav-account__item"><a href="">Account</a></li>
+          <li class="nav-account__item"><a href="">Cart (0)</a></li>
+        </ul>
       </nav>
-      <ul class="nav-list">
-        <li><a href="">Newsletter</a></li>
-        <li><a href="">Account</a></li>
-        <li><a href="">Cart (0)</a></li>
-      </ul>
     </header>
     <main>
       <!-- Секция героя -->
       <section class="hero-section">
-        <h1 class="hero-title">Alcohol for the modern drinker</h1>
-        <p class="hero-text">
-          Light and refreshing flavors made with real, clean ingredients you can
-          feel good about. Just pour, sip, and enjoy.
-        </p>
-        <!-- <button class="hero-btn" type="button">Shop ALL</button> -->
-        <a class="hero-btn" href="">Shop ALL</a>
+        <div class="container hero">
+          <img src="./images/hero.jpg" alt="" />
+          <div class="hero-block">
+            <h1 class="hero-title">Alcohol for the modern drinker</h1>
+            <p class="hero-text">
+              Light and refreshing flavors made with real, clean ingredients you
+              can feel good about. Just pour, sip, and enjoy.
+            </p>
+            <!-- <button class="hero-btn" type="button">Shop ALL</button> -->
+            <a class="hero-btn" href="">Shop ALL</a>
+          </div>
+        </div>
       </section>
       <!-- Отзывы  -->
-      <section>
+      <section class="container">
         <h2>Reviews</h2>
         <ul class="reviews-list">
           <li class="reviews-list__item">
@@ -66,7 +71,7 @@
         </ul>
       </section>
       <!-- Секция товаров -->
-      <section>
+      <section class="container">
         <h2 class="goods-title">Made with natural ingredients, nothing fake</h2>
         <p class="goods-text">Shop All Flavors</p>
         <ul class="goods-list">
@@ -112,7 +117,7 @@
         </ul>
       </section>
       <!-- Секция преимуществ -->
-      <section>
+      <section class="container">
         <img src="./images/aperitifs.jpg" alt="" />
         <h2 class="advantages-title">An intro to apéritifs</h2>
         <p class="advantages-text">
@@ -153,7 +158,7 @@
         />
       </section>
       <!-- Секция отзывов покупателей -->
-      <section class="buyers-reviews__section">
+      <section class="buyers-reviews__section container">
         <h2 class="buyers-reviews__title">Reviews</h2>
         <ul class="buyers-reviews__list">
           <li>
@@ -183,7 +188,7 @@
         </ul>
       </section>
       <!-- Секция статьи -->
-      <section>
+      <section class="container">
         <img src="./images/flavors.jpg" width="550" alt="spices and herbs" />
         <h2 class="article-title">
           We do things differently than most producers
@@ -196,7 +201,7 @@
         <a class="article-btn" href="">LEARN MORE</a>
       </section>
       <!-- Секция контактов -->
-      <section class="contacts-section">
+      <section class="contacts-section container">
         <img src="./images/set_the_mood.jpg" alt="" />
         <h2 class="contacts-title">Set the mood</h2>
         <p class="contacts-text">
@@ -212,7 +217,7 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
       <h3 class="footer-title">Stay posted</h3>
       <p class="footer-text">
         Let's be friends. Subscribe to our newsletter to receive updates on new
