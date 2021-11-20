@@ -20,7 +20,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -64,14 +65,11 @@ ul {
   list-style-type: none;
   display: flex;
   align-items: center;
-
-  outline: 1px solid tomato;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
-  outline: 1px solid tomato;
 }
 
 .nav-list a {
@@ -97,7 +95,6 @@ ul {
   list-style-type: none;
   display: flex;
   align-items: center;
-  outline: 1px solid tomato;
 }
 
 .nav-account__list a {
@@ -188,23 +185,59 @@ ul {
 
 .reviews-list {
   list-style-type: none;
+  display: flex;
+  padding: 55px 0px 42px;
+
+  border-bottom: 1px solid #bdbdbd;
 }
 
 .reviews-list__item {
+  width: calc((100%-2 * 165) / 3);
+
   font-size: 18px;
   line-height: 1.78;
+  padding: 4px 21px 0px;
+}
+
+.reviews-list__item:not(:last-child) {
+  margin-right: 165px;
+}
+
+.review-text {
+  text-align: center;
+
+  margin-bottom: 36px;
+}
+
+.reviews-list__item > img {
+  display: block;
+
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Goods */
 
+.goods {
+  padding: 105px 30px 140px;
+}
+
 .goods-title {
+  max-width: 673px;
+  margin-right: auto;
+  margin-left: auto;
+
   font-family: Tinos, serif;
   font-weight: normal;
   font-size: 64px;
   line-height: 1.25;
+  text-align: center;
 }
 
 .goods-text {
+  margin-top: 24px;
+  text-align: center;
+
   font-size: 12px;
   line-height: 1.5;
 
@@ -214,9 +247,12 @@ ul {
 
 .goods-list {
   list-style-type: none;
+  display: flex;
+  margin-top: 82px;
 }
 
 .goods-item__title {
+  margin-top: 19px;
   font-family: Tinos, serif;
   font-weight: normal;
   font-size: 31px;
@@ -224,11 +260,18 @@ ul {
 }
 
 .goods-item__description {
+  margin-top: 16px;
+
   font-size: 16px;
   line-height: 1.75;
 }
 
 .goods-item__btn {
+  display: inline-block;
+  margin-top: 27px;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  min-width: 180px;
   font-size: 12px;
   line-height: 1.17;
 
@@ -238,7 +281,7 @@ ul {
   color: var(--light-text-color);
 
   background: var(--btn-color);
-
+  border: 1px solid var(--primary-text-color);
   text-decoration: none;
 }
 
@@ -247,6 +290,19 @@ ul {
   color: var(--btn-color);
   border: 1px solid var(--primary-text-color);
   background: var(--light-text-color);
+}
+
+.goods-item > img {
+  display: block;
+}
+
+.goods-item {
+  width: calc((100%-2 * 55px) / 3);
+  text-align: center;
+}
+
+.goods-item:not(:last-child) {
+  margin-right: 55px;
 }
 
 /* Advantages */
