@@ -32,8 +32,6 @@ p {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-
-  outline: 1px solid tomato;
 }
 
 .visually-hidden {
@@ -465,6 +463,13 @@ ul {
   color: var(--light-text-color);
 }
 
+.contacts-block {
+  width: 550px;
+  padding: 40px 69px 40px;
+
+  text-align: center;
+}
+
 .contacts-title {
   font-family: Tinos, serif;
   font-weight: normal;
@@ -478,6 +483,11 @@ ul {
 }
 
 .spotify-link {
+  margin-top: 26px;
+  display: inline-block;
+  min-width: 180px;
+  padding-top: 18px;
+  padding-bottom: 20px;
   font-size: 12px;
   line-height: 1.17;
 
@@ -490,16 +500,29 @@ ul {
   text-decoration: none;
 }
 
+.spotify-link:hover,
+.spotify-link:focus {
+  color: var(--light-text-color);
+  background-color: var(--primary-text-color);
+  outline: 1px solid var(--light-text-color);
+}
+
 .contacts-links__title {
   font-size: 16px;
   line-height: 1.75;
 }
 
+.contacts-links__block {
+  padding: 30px 134px 32px;
+}
+
 .contacts-links {
   list-style-type: none;
+  display: flex;
 }
 
 .contacts-link {
+  display: inline-block;
   font-size: 12px;
   line-height: 1.5;
 
@@ -509,6 +532,10 @@ ul {
   color: var(--light-text-color);
 
   text-decoration: none;
+}
+
+.contacts-links > li:not(:last-child) {
+  margin-right: 21px;
 }
 
 .contacts-link:hover,
@@ -523,6 +550,11 @@ ul {
   color: var(--light-text-color);
 }
 
+.footer-main__block {
+  display: flex;
+  padding-top: 45px;
+}
+
 .footer-title {
   font-family: Tinos, serif;
   font-weight: normal;
@@ -531,8 +563,21 @@ ul {
 }
 
 .footer-text {
+  margin-right: 16px;
+  margin-top: 12px;
+  margin-bottom: 32px;
   font-size: 18px;
   line-height: 1.5;
+}
+
+.footer-list {
+  display: flex;
+  padding-top: 10px;
+}
+
+.form-block {
+  max-width: 440px;
+  margin-right: 220px;
 }
 
 .form-input {
@@ -558,6 +603,7 @@ ul {
 }
 
 .footer-links__title {
+  margin-bottom: 30px;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.5;
@@ -585,4 +631,22 @@ ul {
 .mark {
   font-size: 15px;
   line-height: 1.6;
+}
+
+.footer-list__item:not(:last-child) {
+  margin-bottom: 21px;
+}
+
+.footer-list__item {
+  margin-right: 60px;
+}
+
+.mark-list {
+  margin-top: 141px;
+  display: flex;
+  align-items: center;
+}
+
+.mark-list > li:not(:last-child) {
+  margin-right: 60px;
 }
