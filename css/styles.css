@@ -459,15 +459,22 @@ ul {
 /* Contacts */
 
 .contacts-section {
-  background-color: var(--primary-text-color);
+  background-image: url(../images/set_the_mood.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   color: var(--light-text-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .contacts-block {
   width: 550px;
   padding: 40px 69px 40px;
-
+  margin-bottom: 20px;
   text-align: center;
+
+  background-color: var(--primary-text-color);
 }
 
 .contacts-title {
@@ -475,6 +482,7 @@ ul {
   font-weight: normal;
   font-size: 55px;
   line-height: 1.45;
+  margin-bottom: 9px;
 }
 
 .contacts-text {
@@ -510,10 +518,13 @@ ul {
 .contacts-links__title {
   font-size: 16px;
   line-height: 1.75;
+  margin-bottom: 17px;
 }
 
 .contacts-links__block {
+  width: 550px;
   padding: 30px 134px 32px;
+  background-color: var(--primary-text-color);
 }
 
 .contacts-links {
