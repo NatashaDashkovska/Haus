@@ -5,6 +5,8 @@
   --btn-color: #191919;
   --footer-links-color: rgba(255, 255, 255, 0.6);
   --secondary-text-color: #8a8a8a;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --time: 250ms;
 }
 
 body {
@@ -60,13 +62,11 @@ ul {
   left: 0;
   right: 0;
 
-  /* max-width: 1350px; */
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
 
-  /* background-color: var(--hero-background-color); */
   display: flex;
 }
 
@@ -93,6 +93,8 @@ ul {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
+
+  transition: color var(--time) var(--cubic);
 }
 
 .nav-list a:hover,
@@ -124,6 +126,8 @@ ul {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
+
+  transition: color var(--time) var(--cubic);
 }
 
 .nav-item:not(:last-child) {
@@ -192,6 +196,9 @@ ul {
   background-color: var(--hero-background-color);
   border-radius: 0px;
   border: 1px solid var(--light-text-color);
+
+  transition: color var(--time) var(--cubic), border var(--time) var(--cubic),
+    background-color var(--time) var(--cubic);
 }
 
 .hero-btn:hover,
@@ -300,16 +307,19 @@ ul {
 
   color: var(--light-text-color);
 
-  background: var(--btn-color);
+  background-color: var(--btn-color);
   border: 1px solid var(--primary-text-color);
   text-decoration: none;
+
+  transition: color var(--time) var(--cubic), border var(--time) var(--cubic),
+    background-color var(--time) var(--cubic);
 }
 
 .goods-item__btn:hover,
 .goods-item__btn:focus {
   color: var(--btn-color);
   border: 1px solid var(--primary-text-color);
-  background: var(--light-text-color);
+  background-color: var(--light-text-color);
 }
 
 .goods-item > img {
@@ -323,6 +333,39 @@ ul {
 
 .goods-item:not(:last-child) {
   margin-right: 55px;
+}
+
+.bestseller-thumb {
+  position: relative;
+  /* padding-top: 23px;
+  padding-left: 19px; */
+}
+
+.bestseller-mark {
+  position: absolute;
+  top: 23px;
+  right: 19px;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+  justify-content: center;
+  align-items: center;
+
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 1.17;
+
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: var(--light-text-color);
+  background-color: var(--btn-color);
 }
 
 /* Advantages */
@@ -530,6 +573,8 @@ ul {
   background-color: var(--light-text-color);
 
   text-decoration: none;
+  transition: color var(--time) var(--cubic),
+    background-color var(--time) var(--cubic), outline var(--time) var(--cubic);
 }
 
 .spotify-link:hover,
@@ -567,6 +612,8 @@ ul {
   color: var(--light-text-color);
 
   text-decoration: none;
+
+  transition: color var(--time) var(--cubic);
 }
 
 .contacts-links > li:not(:last-child) {
@@ -656,6 +703,8 @@ ul {
   color: var(--footer-links-color);
 
   text-decoration: none;
+
+  transition: color var(--time) var(--cubic);
 }
 
 .footer-link:hover,
