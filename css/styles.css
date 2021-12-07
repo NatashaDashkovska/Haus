@@ -55,7 +55,18 @@ ul {
 /* Header */
 
 .header {
-  background-color: var(--hero-background-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  /* max-width: 1350px; */
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  /* background-color: var(--hero-background-color); */
   display: flex;
 }
 
@@ -63,11 +74,11 @@ ul {
   list-style-type: none;
   display: flex;
   align-items: center;
+  margin-right: 330px;
 }
 
 .nav {
   display: flex;
-  justify-content: space-between;
 }
 
 .nav-list a {
@@ -98,6 +109,7 @@ ul {
   list-style-type: none;
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .nav-account__list a {
@@ -130,13 +142,23 @@ ul {
 .hero-section {
   background-color: var(--hero-background-color);
   display: flex;
+
+  max-width: 1440px;
+
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero {
-  display: flex;
+  padding: 312px 88px 100px 60px;
+}
+.hero-image {
+  display: block;
 }
 
 .hero-title {
+  margin-bottom: 34px;
+
   font-family: Tinos, serif;
   font-weight: normal;
   font-size: 73px;
@@ -155,6 +177,7 @@ ul {
 }
 
 .hero-btn {
+  display: inline-block;
   padding: 18px 52px 20px;
 
   font-size: 12px;
@@ -176,12 +199,6 @@ ul {
   color: var(--light-text-color);
   background-color: var(--primary-text-color);
   border: 1px solid var(--primary-text-color);
-}
-
-.hero-block {
-  margin-left: 60px;
-  margin-top: 312px;
-  margin-bottom: 34px;
 }
 
 /* Reviews */
@@ -459,13 +476,20 @@ ul {
 /* Contacts */
 
 .contacts-section {
+  width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-image: url(../images/set_the_mood.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: var(--light-text-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .contacts-block {
