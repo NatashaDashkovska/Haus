@@ -24,7 +24,11 @@
           <li class="nav-item"><a href="">membership</a></li>
           <li class="nav-item"><a href="">our story</a></li>
         </ul>
-        <a class="logo" href="/"><img src="./images/logo.svg" alt="" /></a>
+        <a class="logo" href="/">
+          <svg>
+            <use href="../images/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
 
         <ul class="nav-account__list">
           <li class="nav-account__item"><a href="">Newsletter</a></li>
@@ -68,6 +72,7 @@
             <p class="review-text">
               “Cleaner, responsibly sourced, and lower in alcohol.”
             </p>
+
             <img src="./images/bon-appetit.svg" alt="" />
           </li>
         </ul>
@@ -232,7 +237,8 @@
               Curated playlists from Woody + Helena, plus some of our friends
               and favorite brands.
             </p>
-            <a class="spotify-link" href="">Spotify</a>
+
+            <button class="spotify-link" data-modal-open>Spotify</button>
           </div>
           <div class="contacts-links__block">
             <p class="contacts-links__title">
@@ -351,5 +357,18 @@
         </ul>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" data-modal-close>
+          <svg>
+            <use href="../images/sprite.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
