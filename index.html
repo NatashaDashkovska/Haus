@@ -363,9 +363,38 @@
       <div class="modal">
         <button class="close-btn" data-modal-close>
           <svg>
-            <use href="../images/sprite.svg#icon-close-black"></use>
+            <use href="./images/sprite.svg#icon-close-black"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <div>
+            <label class="modal-label" for="name">Name</label>
+            <input
+              class="modal-form__input"
+              type="text"
+              name="name"
+              id="name"
+              autocomplete="off"
+            />
+            <label class="modal-label" for="tel">Tel</label>
+            <input
+              class="modal-form__input"
+              type="tel"
+              name="tel"
+              id="tel"
+              autocomplete="off"
+            />
+            <label class="modal-label" for="email">E-mail</label>
+            <input
+              class="modal-form__input"
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="off"
+            />
+          </div>
+          <button class="modal-btn" type="submit">ok</button>
+        </form>
       </div>
     </div>
 
