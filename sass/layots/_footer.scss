@@ -1,0 +1,84 @@
+.footer {
+  background-color: var(--primary-text-color);
+  color: var(--light-text-color);
+}
+
+.footer-main__block {
+  display: flex;
+  padding-top: 45px;
+}
+
+.footer-title {
+  font-family: Tinos, serif;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 1.71;
+}
+
+.footer-text {
+  margin-right: 16px;
+  margin-top: 12px;
+  margin-bottom: 32px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.footer-list {
+  display: flex;
+  padding-top: 10px;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer-links__title {
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5;
+
+  text-transform: uppercase;
+}
+
+.footer-link {
+  font-size: 12px;
+  line-height: 1.5;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: var(--footer-links-color);
+
+  text-decoration: none;
+
+  transition: color var(--time) var(--cubic);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--light-text-color);
+}
+
+.mark {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.footer-list__item:not(:last-child) {
+  margin-bottom: 21px;
+}
+
+.footer-list__item {
+  margin-right: 60px;
+}
+
+.mark-list {
+  margin-top: 141px;
+  display: flex;
+  align-items: center;
+}
+
+.mark-list > li:not(:last-child) {
+  margin-right: 60px;
+}

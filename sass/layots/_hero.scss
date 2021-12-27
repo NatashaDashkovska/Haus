@@ -1,0 +1,64 @@
+.hero-section {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+
+  display: flex;
+
+  background-color: $hero-background-color;
+}
+
+.hero-image {
+  display: block;
+}
+
+.hero {
+  padding: 312px 88px 100px 60px;
+}
+
+.hero--title {
+  margin-bottom: 34px;
+
+  font-family: Tinos, serif;
+  font-weight: normal;
+  font-size: 73px;
+  line-height: 1.32;
+
+  color: $light-text-color;
+}
+
+.hero--text {
+  margin-bottom: 46px;
+  margin-top: 0px;
+
+  font-size: 18px;
+  line-height: 1.78;
+
+  color: $light-text-color;
+}
+
+.hero-btn {
+  padding: 18px 52px 20px;
+
+  display: inline-block;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: $primary-text-color;
+  background-color: $hero-background-color;
+  border-radius: 0px;
+  border: 1px solid $light-text-color;
+
+  transition: color $time $cubic, border $time $cubic,
+    background-color $time $cubic;
+
+  &:hover,
+  &:focus {
+    color: $light-text-color;
+    background-color: $primary-text-color;
+    border: 1px solid $primary-text-color;
+  }
+}

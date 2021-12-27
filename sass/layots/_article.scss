@@ -1,0 +1,37 @@
+.article-section {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 59px;
+}
+
+.article-image {
+  display: block;
+  margin-right: 110px;
+}
+
+.article-title {
+  margin-bottom: 154px;
+
+  font-family: Tinos, serif;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 1.25;
+}
+
+.article {
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 1.78;
+}
+
+.article-btn {
+  font-size: 12px;
+  line-height: 1.5;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: var(--primary-text-color);
+
+  text-decoration: none;
+}

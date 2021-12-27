@@ -5,24 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&family=Tinos&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.min.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="nav container">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="">shop</a></li>
-          <li class="nav-item"><a href="">membership</a></li>
-          <li class="nav-item"><a href="">our story</a></li>
+      <nav class="navigation container">
+        <ul class="navigation--list">
+          <li class="navigation--item">
+            <a class="navigation--link" href="">shop</a>
+          </li>
+          <li class="navigation--item">
+            <a class="navigation--link" href="">membership</a>
+          </li>
+          <li class="navigation--item">
+            <a class="navigation--link" href="">our story</a>
+          </li>
         </ul>
         <a class="logo" href="/">
           <svg>
@@ -30,10 +27,16 @@
           </svg>
         </a>
 
-        <ul class="nav-account__list">
-          <li class="nav-account__item"><a href="">Newsletter</a></li>
-          <li class="nav-account__item"><a href="">Account</a></li>
-          <li class="nav-account__item"><a href="">Cart (0)</a></li>
+        <ul class="navigation--account-list">
+          <li class="navigation--account-item">
+            <a class="navigation--account-link" href="">Newsletter</a>
+          </li>
+          <li class="navigation--account-item">
+            <a class="navigation--account-link" href="">Account</a>
+          </li>
+          <li class="navigation--account-item">
+            <a class="navigation--account-link" href="">Cart (0)</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -42,34 +45,34 @@
       <section class="hero-section">
         <img class="hero-image" src="./images/hero.jpg" alt="" />
         <div class="hero">
-          <h1 class="hero-title">Alcohol for the modern drinker</h1>
-          <p class="hero-text">
+          <h1 class="hero--title">Alcohol for the modern drinker</h1>
+          <p class="hero--text">
             Light and refreshing flavors made with real, clean ingredients you
             can feel good about. Just pour, sip, and enjoy.
           </p>
-          <!-- <button class="hero-btn" type="button">Shop ALL</button> -->
+
           <a class="hero-btn" href="">Shop ALL</a>
         </div>
       </section>
       <!-- Отзывы  -->
       <section class="container">
         <h2 class="visually-hidden">Reviews</h2>
-        <ul class="reviews-list">
-          <li class="reviews-list__item">
-            <p class="review-text">
+        <ul class="reviews--list">
+          <li class="reviews--item">
+            <p class="review--text">
               "What makes Haus so special is its incredible flavors."
             </p>
             <img src="./images/food&wine.svg" alt="" />
           </li>
-          <li class="reviews-list__item">
-            <p class="review-text">
+          <li class="reviews--item">
+            <p class="review--text">
               “For the wine or cocktail lover who’s tried it all and wants
               something new and refreshing.”
             </p>
             <img src="./images/the-new-york-times.svg" alt="" />
           </li>
-          <li class="reviews-list__item">
-            <p class="review-text">
+          <li class="reviews--item">
+            <p class="review--text">
               “Cleaner, responsibly sourced, and lower in alcohol.”
             </p>
 
@@ -79,10 +82,12 @@
       </section>
       <!-- Секция товаров -->
       <section class="container goods">
-        <h2 class="goods-title">Made with natural ingredients, nothing fake</h2>
-        <p class="goods-text">Shop All Flavors</p>
-        <ul class="goods-list">
-          <li class="goods-item">
+        <h2 class="goods--title">
+          Made with natural ingredients, nothing fake
+        </h2>
+        <p class="goods--text">Shop All Flavors</p>
+        <ul class="goods--list">
+          <li class="goods--item">
             <img
               src="./images/sampler_kit.jpg"
               width="382"
@@ -95,7 +100,7 @@
             </p>
             <a class="goods-item__btn" href="">Shop Now</a>
           </li>
-          <li class="goods-item">
+          <li class="goods--item">
             <div class="bestseller-thumb">
               <img
                 src="./images/jalapeno.jpg"
@@ -111,7 +116,7 @@
             </p>
             <a class="goods-item__btn" href="">Shop Now</a>
           </li>
-          <li class="goods-item">
+          <li class="goods--item">
             <div class="bestseller-thumb">
               <img
                 src="./images/citrus_flower.jpg"
