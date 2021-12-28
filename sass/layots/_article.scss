@@ -1,15 +1,17 @@
-.article-section {
-  display: flex;
+.article {
   padding-top: 60px;
   padding-bottom: 59px;
+
+  display: flex;
 }
 
-.article-image {
-  display: block;
+.article--image {
   margin-right: 110px;
+
+  display: block;
 }
 
-.article-title {
+.article--title {
   margin-bottom: 154px;
 
   font-family: Tinos, serif;
@@ -18,20 +20,19 @@
   line-height: 1.25;
 }
 
-.article {
+.article--text {
   margin-bottom: 35px;
+
   font-size: 18px;
   line-height: 1.78;
 }
 
-.article-btn {
+.article--btn {
   font-size: 12px;
   line-height: 1.5;
-
   letter-spacing: 1px;
   text-transform: uppercase;
 
   color: var(--primary-text-color);
-
   text-decoration: none;
 }

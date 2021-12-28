@@ -1,18 +1,14 @@
-.contacts-section {
+.contacts {
   width: 1440px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 60px 15px;
   margin-right: auto;
   margin-left: auto;
-
-  padding-top: 60px;
-  padding-bottom: 60px;
 
   background-image: url(../images/set_the_mood.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: var(--light-text-color);
+  color: $light-text-color;
 }
 
 .contacts-block {
@@ -21,86 +17,83 @@
   margin-bottom: 20px;
   text-align: center;
 
-  background-color: var(--primary-text-color);
+  background-color: $primary-text-color;
 }
 
-.contacts-title {
+.contacts--title {
+  margin-bottom: 9px;
+
   font-family: Tinos, serif;
   font-weight: normal;
   font-size: 55px;
   line-height: 1.45;
-  margin-bottom: 9px;
 }
 
-.contacts-text {
+.contacts--text {
   font-size: 16px;
   line-height: 1.75;
 }
 
 .spotify-link {
   margin-top: 26px;
-  display: inline-block;
   min-width: 180px;
   padding-top: 18px;
   padding-bottom: 20px;
+
+  display: inline-block;
+
   font-size: 12px;
   line-height: 1.17;
-
   letter-spacing: 1px;
   text-transform: uppercase;
 
-  color: var(--primary-text-color);
-  background-color: var(--light-text-color);
+  color: $primary-text-color;
+  background-color: $light-text-color;
+  transition: color $time $cubic, background-color $time $cubic,
+    outline $time $cubic;
 
-  text-decoration: none;
-  transition: color var(--time) var(--cubic),
-    background-color var(--time) var(--cubic), outline var(--time) var(--cubic);
+  &:hover,
+  &:focus {
+    color: $light-text-color;
+    background-color: $primary-text-color;
+    outline: 1px solid $light-text-color;
+  }
 }
 
-.spotify-link:hover,
-.spotify-link:focus {
-  color: var(--light-text-color);
-  background-color: var(--primary-text-color);
-  outline: 1px solid var(--light-text-color);
-}
-
-.contacts-links__title {
-  font-size: 16px;
-  line-height: 1.75;
-  margin-bottom: 17px;
-}
-
-.contacts-links__block {
+.links-block {
   width: 550px;
   padding: 30px 134px 32px;
-  background-color: var(--primary-text-color);
+
+  background-color: $primary-text-color;
 }
 
-.contacts-links {
-  list-style-type: none;
+.links-block--title {
+  margin-bottom: 17px;
+
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.links-block--list {
   display: flex;
+  & > li:not(:last-child) {
+    margin-right: 21px;
+  }
 }
 
-.contacts-link {
+.links-block--link {
   display: inline-block;
+
   font-size: 12px;
   line-height: 1.5;
-
   letter-spacing: 1px;
   text-transform: uppercase;
 
-  color: var(--light-text-color);
+  color: $light-text-color;
+  transition: color $time $cubic;
 
-  text-decoration: none;
-
-  transition: color var(--time) var(--cubic);
-}
-
-.contacts-links > li:not(:last-child) {
-  margin-right: 21px;
-}
-
-.contacts-link:hover,
-.contacts-link:focus {
-  color: #818181;
+  &:hover,
+  &:focus {
+    color: #818181;
+  }
 }

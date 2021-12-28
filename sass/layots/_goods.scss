@@ -43,79 +43,76 @@
   display: block;
 }
 
-.goods-item__title {
+.goods--item-title {
   margin-top: 19px;
+
   font-family: Tinos, serif;
   font-weight: normal;
   font-size: 31px;
   line-height: 1.42;
 }
 
-.goods-item__description {
+.goods--item-description {
   margin-top: 16px;
 
   font-size: 16px;
   line-height: 1.75;
 }
 
-.goods-item__btn {
-  display: inline-block;
+.goods--item-btn {
   margin-top: 27px;
   padding-top: 18px;
   padding-bottom: 20px;
   min-width: 180px;
+
+  display: inline-block;
+
   font-size: 12px;
   line-height: 1.17;
-
   letter-spacing: 1px;
   text-transform: uppercase;
 
-  color: var(--light-text-color);
-
-  background-color: var(--btn-color);
-  border: 1px solid var(--primary-text-color);
+  color: $light-text-color;
+  background-color: $btn-color;
+  border: 1px solid $primary-text-color;
   text-decoration: none;
 
-  transition: color var(--time) var(--cubic), border var(--time) var(--cubic),
-    background-color var(--time) var(--cubic);
-}
+  transition: color $time $cubic, border $time $cubic,
+    background-color $time $cubic;
 
-.goods-item__btn:hover,
-.goods-item__btn:focus {
-  color: var(--btn-color);
-  border: 1px solid var(--primary-text-color);
-  background-color: var(--light-text-color);
+  &:hover,
+  &:focus {
+    color: $btn-color;
+    border: 1px solid $primary-text-color;
+    background-color: $light-text-color;
+  }
 }
 
 .bestseller-thumb {
   position: relative;
-  /* padding-top: 23px;
-  padding-left: 19px; */
 }
 
 .bestseller-mark {
   position: absolute;
   top: 23px;
   right: 19px;
-  display: flex;
   margin-top: 0;
   margin-bottom: 0;
-
   width: 100px;
   height: 100px;
-  border-radius: 50%;
 
+  display: flex;
   justify-content: center;
   align-items: center;
 
   font-family: Roboto;
   font-size: 12px;
   line-height: 1.17;
-
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
 
-  color: var(--light-text-color);
-  background-color: var(--btn-color);
+  border-radius: 50%;
+  color: $light-text-color;
+  background-color: $btn-color;
 }

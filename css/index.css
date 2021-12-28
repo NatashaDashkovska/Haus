@@ -403,7 +403,7 @@ a {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../../fonts/roboto_400.woff2") format("woff2"), url("../../fonts/roboto_400.woff") format("woff");
+  src: url("../fonts/roboto_400.woff2") format("woff2"), url("../fonts/roboto_400.woff") format("woff");
 }
 
 @font-face {
@@ -411,7 +411,7 @@ a {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../../fonts/tinos_400.woff2") format("woff2"), url("../../fonts/tinos_400.woff") format("woff");
+  src: url("../fonts/tinos_400.woff2") format("woff2"), url("../fonts/tinos_400.woff") format("woff");
 }
 
 .header {
@@ -584,5 +584,223 @@ a {
   margin-right: auto;
   margin-left: auto;
   display: block;
+}
+
+.goods {
+  padding: 105px 30px 140px;
+}
+
+.goods--title {
+  max-width: 673px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Tinos, serif;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.goods--text {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.goods--list {
+  margin-top: 82px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.goods--item {
+  width: calc((100%-2 * 55px) / 3);
+  text-align: center;
+}
+
+.goods--item:not(:last-child) {
+  margin-right: 55px;
+}
+
+.goods--item > img {
+  display: block;
+}
+
+.goods--item-title {
+  margin-top: 19px;
+  font-family: Tinos, serif;
+  font-weight: normal;
+  font-size: 31px;
+  line-height: 1.42;
+}
+
+.goods--item-description {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.goods--item-btn {
+  margin-top: 27px;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  min-width: 180px;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #191919;
+  border: 1px solid #000000;
+  text-decoration: none;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.goods--item-btn:hover, .goods--item-btn:focus {
+  color: #191919;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+}
+
+.bestseller-thumb {
+  position: relative;
+}
+
+.bestseller-mark {
+  position: absolute;
+  top: 23px;
+  right: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #191919;
+}
+
+.advantages {
+  margin-top: 59px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.advantages--title {
+  font-family: Tinos, serif;
+  font-weight: normal;
+  font-size: 53px;
+  line-height: 1.51;
+}
+
+.advantages--text {
+  margin-bottom: 95px;
+  max-width: 548px;
+  font-size: 18px;
+  line-height: 1.78;
+}
+
+.advantages-block {
+  padding-top: 59px;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advantages--list {
+  margin-right: 55px;
+  padding-top: 112px;
+}
+
+.advantages--list > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.advantages--item-title {
+  margin-bottom: 19px;
+  font-family: Tinos, serif;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.47;
+}
+
+.advantages--item-title__accent {
+  margin-bottom: 19px;
+  font-family: Tinos, serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.47;
+}
+
+.advantages--item-text {
+  font-size: 18px;
+  line-height: 1.78;
+}
+
+.buyers-reviews {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.buyers-reviews--list {
+  padding: 95px 0px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.buyers-reviews--text {
+  font-size: 18px;
+  line-height: 1.78;
+  margin-bottom: 17px;
+}
+
+.reviewer-name {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.reviewer-title {
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #8a8a8a;
+}
+
+.buyers-reviews--item {
+  width: calc((100%-2 * 185px) / 3);
+  text-align: center;
+}
+
+.buyers-reviews--item:not(:last-child) {
+  margin-right: 185px;
 }
 /*# sourceMappingURL=index.css.map */
