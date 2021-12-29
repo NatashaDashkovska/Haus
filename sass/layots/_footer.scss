@@ -46,12 +46,12 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 
-  color: var(--footer-links-color);
-  transition: color var(--time) var(--cubic);
+  color: $footer-links-color;
+  transition: color $time $cubic;
 
   &:hover,
   &:focus {
-    color: var(--light-text-color);
+    color: $light-text-color;
   }
 }
 
