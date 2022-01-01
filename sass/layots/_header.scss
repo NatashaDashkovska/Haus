@@ -15,14 +15,14 @@
   display: flex;
 }
 
-.navigation--list {
+.navigation__list {
   margin-right: 330px;
 
   display: flex;
   align-items: center;
 }
 
-.navigation--link {
+.navigation__link {
   padding-top: 38px;
   padding-bottom: 38px;
 
@@ -42,7 +42,7 @@
   }
 }
 
-.navigation--item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 60px;
 }
 
@@ -50,14 +50,14 @@
   max-width: 84px;
 }
 
-.navigation--account-list {
+.navigation__account-list {
   margin-left: auto;
 
   display: flex;
   align-items: center;
 }
 
-.navigation--account-link {
+.navigation__account-link {
   padding-top: 38px;
   padding-bottom: 38px;
 
@@ -77,6 +77,6 @@
   }
 }
 
-.navigation--account-item:not(:last-child) {
+.navigation__account-item:not(:last-child) {
   margin-right: 60px;
 }

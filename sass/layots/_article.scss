@@ -5,13 +5,13 @@
   display: flex;
 }
 
-.article--image {
+.article__image {
   margin-right: 110px;
 
   display: block;
 }
 
-.article--title {
+.article__title {
   margin-bottom: 154px;
 
   font-family: Tinos, serif;
@@ -20,14 +20,14 @@
   line-height: 1.25;
 }
 
-.article--text {
+.article__text {
   margin-bottom: 35px;
 
   font-size: 18px;
   line-height: 1.78;
 }
 
-.article--btn {
+.article__btn {
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 1px;

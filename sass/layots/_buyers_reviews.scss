@@ -3,13 +3,13 @@
   color: $light-text-color;
 }
 
-.buyers-reviews--list {
+.buyers-reviews__list {
   padding: 95px 0px 50px;
 
   display: flex;
 }
 
-.buyers-reviews--text {
+.buyers-reviews__text {
   font-size: 18px;
   line-height: 1.78;
   margin-bottom: 17px;
@@ -31,7 +31,7 @@
   color: #8a8a8a;
 }
 
-.buyers-reviews--item {
+.buyers-reviews__item {
   width: calc((100%-2 * 185px) / 3);
   text-align: center;
 

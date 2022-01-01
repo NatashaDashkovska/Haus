@@ -2,7 +2,7 @@
   padding: 105px 30px 140px;
 }
 
-.goods--title {
+.goods__title {
   max-width: 673px;
   margin-right: auto;
   margin-left: auto;
@@ -14,7 +14,7 @@
   text-align: center;
 }
 
-.goods--text {
+.goods__text {
   margin-top: 24px;
   text-align: center;
 
@@ -24,13 +24,13 @@
   text-transform: uppercase;
 }
 
-.goods--list {
+.goods__list {
   margin-top: 82px;
 
   display: flex;
 }
 
-.goods--item {
+.goods__item {
   width: calc((100%-2 * 55px) / 3);
   text-align: center;
 
@@ -39,11 +39,11 @@
   }
 }
 
-.goods--item > img {
+.goods__item > img {
   display: block;
 }
 
-.goods--item-title {
+.goods__item-title {
   margin-top: 19px;
 
   font-family: Tinos, serif;
@@ -52,14 +52,14 @@
   line-height: 1.42;
 }
 
-.goods--item-description {
+.goods__item-description {
   margin-top: 16px;
 
   font-size: 16px;
   line-height: 1.75;
 }
 
-.goods--item-btn {
+.goods__item-btn {
   margin-top: 27px;
   padding-top: 18px;
   padding-bottom: 20px;

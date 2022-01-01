@@ -7,14 +7,14 @@
   border-bottom: 1px solid #bdbdbd;
 }
 
-.advantages--title {
+.advantages__title {
   font-family: Tinos, serif;
   font-weight: normal;
   font-size: 53px;
   line-height: 1.51;
 }
 
-.advantages--text {
+.advantages__text {
   margin-bottom: 95px;
   max-width: 548px;
 
@@ -29,7 +29,7 @@
   display: flex;
 }
 
-.advantages--list {
+.advantages__list {
   margin-right: 55px;
   padding-top: 112px;
 
@@ -38,7 +38,7 @@
   }
 }
 
-.advantages--item-title {
+.advantages__item-title {
   margin-bottom: 19px;
 
   font-family: Tinos, serif;
@@ -47,7 +47,7 @@
   line-height: 1.47;
 }
 
-.advantages--item-title__accent {
+.advantages__item-title--accent {
   margin-bottom: 19px;
 
   font-family: Tinos, serif;
@@ -56,7 +56,7 @@
   line-height: 1.47;
 }
 
-.advantages--item-text {
+.advantages__item-text {
   font-size: 18px;
   line-height: 1.78;
 }

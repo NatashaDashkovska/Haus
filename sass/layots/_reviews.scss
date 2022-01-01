@@ -1,4 +1,4 @@
-.reviews--list {
+.reviews__list {
   padding: 55px 0px 42px;
 
   display: flex;
@@ -6,7 +6,7 @@
   border-bottom: 1px solid #bdbdbd;
 }
 
-.reviews--item {
+.reviews__item {
   width: calc((100%-2 * 165) / 3);
   padding: 4px 21px 0px;
 
@@ -18,12 +18,12 @@
   }
 }
 
-.review--text {
+.review__text {
   text-align: center;
   margin-bottom: 36px;
 }
 
-.reviews--item > img {
+.reviews__item > img {
   margin-right: auto;
   margin-left: auto;
 

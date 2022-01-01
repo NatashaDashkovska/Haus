@@ -20,7 +20,7 @@
   background-color: $primary-text-color;
 }
 
-.contacts--title {
+.contacts__title {
   margin-bottom: 9px;
 
   font-family: Tinos, serif;
@@ -29,7 +29,7 @@
   line-height: 1.45;
 }
 
-.contacts--text {
+.contacts__text {
   font-size: 16px;
   line-height: 1.75;
 }
@@ -67,21 +67,21 @@
   background-color: $primary-text-color;
 }
 
-.links-block--title {
+.links-block__title {
   margin-bottom: 17px;
 
   font-size: 16px;
   line-height: 1.75;
 }
 
-.links-block--list {
+.links-block__list {
   display: flex;
   & > li:not(:last-child) {
     margin-right: 21px;
   }
 }
 
-.links-block--link {
+.links-block__link {
   display: inline-block;
 
   font-size: 12px;
