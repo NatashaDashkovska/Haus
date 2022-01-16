@@ -1,15 +1,10 @@
-@import './utils/variables';
 @import './utils/normalize';
-@import './base/common';
+@import './utils/variables';
 @import './base/fonts';
-@import './layots/header';
+
+@import './base/common';
+@import './utils/mixins';
+@import './base/container';
+
+@import './layots/_header';
 @import './layots/hero';
-@import './layots/reviews';
-@import './layots/goods';
-@import './layots/advantages';
-@import './layots/buyers_reviews';
-@import './layots/article';
-@import './layots/contacts';
-@import './layots/footer';
-@import './components/modal';
-@import './components/form';

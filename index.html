@@ -41,9 +41,15 @@
       </nav>
     </header>
     <main>
-      <!__ Секция героя __>
+      <!----Секция героя -->
       <section class="hero-section">
-        <img class="hero-image" src="./images/hero.jpg" alt="" />
+        <picture class="hero-image">
+          <source
+            srcset="./images/hero.jpg 1x, ./images/hero@2x.jpg 2x"
+            media="(min-width: 480px)"
+          />
+          <img src="./images/hero.jpg" alt=" " />
+        </picture>
         <div class="hero">
           <h1 class="hero__title">Alcohol for the modern drinker</h1>
           <p class="hero__text">
@@ -55,7 +61,7 @@
         </div>
       </section>
       <!__ Отзывы  __>
-      <section class="container">
+      <!-- <section class="container">
         <h2 class="visually-hidden">Reviews</h2>
         <ul class="reviews__list">
           <li class="reviews__item">
@@ -79,9 +85,9 @@
             <img src="./images/bon-appetit.svg" alt="" />
           </li>
         </ul>
-      </section>
+      </section> -->
       <!__ Секция товаров __>
-      <section class="container goods">
+      <!-- <section class="container goods">
         <h2 class="goods__title">
           Made with natural ingredients, nothing fake
         </h2>
@@ -133,8 +139,8 @@
             <a class="goods__item-btn" href="">Shop Now</a>
           </li>
         </ul>
-      </section>
-      <!__ Секция преимуществ __>
+      </section> -->
+      <!-- <!__ Секция преимуществ __>
       <section class="container">
         <img src="./images/aperitifs.jpg" alt="" />
         <div class="advantages">
@@ -179,9 +185,9 @@
             alt="woman take bottle and glass"
           />
         </div>
-      </section>
+      </section> -->
       <!__ Секция отзывов покупателей __>
-      <section class="buyers-reviews">
+      <!-- <section class="buyers-reviews">
         <div class="container">
           <h2 class="visually-hidden">Reviews</h2>
           <ul class="buyers-reviews__list">
@@ -211,9 +217,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!__ Секция статьи __>
-      <section class="container article">
+      <!-- <section class="container article">
         <img
           class="article__image"
           src="./images/flavors.jpg"
@@ -232,9 +238,9 @@
           </p>
           <a class="article__btn" href="">LEARN MORE</a>
         </div>
-      </section>
+      </section> -->
       <!__ Секция контактов __>
-      <section class="contacts">
+      <!-- <section class="contacts">
         <div class="container">
           <div class="contacts-block">
             <h2 class="contacts__title">Set the mood</h2>
@@ -254,10 +260,10 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <!__ Footer __>
+    <!-- <!__ Footer __>
     <footer class="footer">
       <div class="container">
         <div class="footer-block">
@@ -360,10 +366,10 @@
           <li><a class="footer__link" href="">Terms & Conditions</a></li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
 
     <!__ Modal __>
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-btn" data-modal-close>
           <svg>
@@ -400,7 +406,7 @@
           <button class="modal-btn" type="submit">ok</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
   </body>
