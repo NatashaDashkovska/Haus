@@ -2,6 +2,20 @@
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: $hero-background-color;
+  @include for-size(desktop) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0px 15px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    display: flex;
+
+    background-color: transparent;
+  }
 }
 
 .navigation {
@@ -9,22 +23,43 @@
   justify-content: space-between;
 }
 
+.navigation__list {
+  @include for-size(desktop) {
+    // margin-right: 330px;
+
+    display: flex;
+    align-items: center;
+  }
+}
+
+.navigation__account-list {
+  @include for-size(desktop) {
+    // margin-left: auto;
+
+    display: flex;
+    align-items: center;
+  }
+}
+
 .logo > svg {
   width: 100px;
   height: 60px;
 }
 
-// .logo {
-//    background-color: black;
-//      margin-right: 50px;
-// }
-
 .navigation__item:not(:last-child) {
   margin-bottom: 10px;
+  @include for-size(desktop) {
+    margin-bottom: 0;
+    margin-right: 60px;
+  }
 }
 
 .navigation__account-item:not(:last-child) {
   margin-bottom: 10px;
+  @include for-size(desktop) {
+    margin-bottom: 0;
+    margin-right: 60px;
+  }
 }
 
 .navigation__link,
@@ -35,10 +70,17 @@
   text-transform: uppercase;
 
   color: $primary-text-color;
+  @include for-size(desktop) {
+    color: $light-text-color;
+  }
+
   transition: color $time $cubic;
 
   &:hover,
   &:focus {
-    color: $hero-background-color;
+    color: $light-text-color;
+    @include for-size(desktop) {
+      color: $primary-text-color;
+    }
   }
 }
