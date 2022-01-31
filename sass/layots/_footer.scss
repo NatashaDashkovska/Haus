@@ -1,0 +1,81 @@
+.footer {
+  background-color: $primary-text-color;
+  color: $light-text-color;
+}
+
+.footer-block {
+  padding-top: 45px;
+  @include for-size(desktop) {
+    display: flex;
+  }
+}
+
+.footer__title {
+  font-family: Tinos, serif;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 1.71;
+}
+
+.footer__text {
+  margin-right: 16px;
+  margin-top: 12px;
+  margin-bottom: 32px;
+
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.footer__list {
+  padding-top: 10px;
+  @include for-size(desktop) {
+    display: flex;
+  }
+}
+
+.footer__list-title {
+  margin-bottom: 30px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.footer__link {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: $footer-links-color;
+  transition: color $time $cubic;
+
+  &:hover,
+  &:focus {
+    color: $light-text-color;
+  }
+}
+
+.mark {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.footer__item {
+  margin-right: 60px;
+
+  &:not(:last-child) {
+    margin-bottom: 21px;
+  }
+}
+
+.footer__mark-list {
+  margin-top: 141px;
+  display: flex;
+  align-items: center;
+
+  & > li:not(:last-child) {
+    margin-right: 60px;
+  }
+}

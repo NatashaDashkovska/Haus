@@ -1,0 +1,190 @@
+.goods {
+  padding: 30px 30px;
+  @include for-size(desktop) {
+    padding: 105px 30px 140px;
+  }
+}
+
+.goods__title {
+  margin-right: auto;
+  margin-left: auto;
+
+  font-family: Tinos, serif;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.05;
+  text-align: center;
+
+  @include for-size(desktop) {
+    max-width: 673px;
+
+    font-family: Tinos, serif;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 1.25;
+    text-align: center;
+  }
+}
+
+.goods__text {
+  margin-top: 18px;
+  text-align: center;
+
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  @include for-size(desktop) {
+    margin-top: 24px;
+  }
+}
+
+.goods__list {
+  @include for-size(tablet) {
+    display: flex;
+    margin-top: 46px;
+  }
+  @include for-size(desktop) {
+    margin-top: 82px;
+
+    display: flex;
+  }
+}
+
+.goods__item {
+  text-align: center;
+
+  @include for-size(tablet) {
+    width: calc((100%-2 * 30px) / 3);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  @include for-size(desktop) {
+    width: calc((100%-2 * 55px) / 3);
+
+    &:not(:last-child) {
+      margin-right: 55px;
+    }
+  }
+}
+
+.goods__item > img {
+  display: block;
+}
+
+.goods__item-title {
+  margin-top: 12px;
+
+  font-family: Tinos, serif;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 1.42;
+
+  text-align: center;
+
+  @include for-size(desktop) {
+    margin-top: 19px;
+
+    font-size: 31px;
+    line-height: 1.42;
+  }
+}
+
+.goods__item-description {
+  margin-top: 16px;
+  text-align: center;
+
+  font-size: 18px;
+  line-height: 1.25;
+
+  @include for-size(tablet) {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  @include for-size(desktop) {
+    margin-top: 16px;
+
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    min-height: 100px;
+  }
+}
+
+.goods__item-btn {
+  margin-top: 27px;
+  margin-bottom: 27px;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  min-width: 180px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  display: inline-block;
+
+  color: $light-text-color;
+  background-color: $btn-color;
+  border: 1px solid $primary-text-color;
+  text-decoration: none;
+
+  transition: color $time $cubic, border $time $cubic,
+    background-color $time $cubic;
+
+  &:hover,
+  &:focus {
+    color: $btn-color;
+    border: 1px solid $primary-text-color;
+    background-color: $light-text-color;
+  }
+  @include for-size(desktop) {
+    margin-top: 27px;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    min-width: 180px;
+    margin-bottom: 0px;
+  }
+}
+
+.bestseller-thumb {
+  position: relative;
+}
+
+.bestseller-mark {
+  position: absolute;
+  top: 23px;
+  right: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100px;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  border-radius: 50%;
+  color: $light-text-color;
+  background-color: $btn-color;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    top: 8px;
+    right: 8px;
+    width: 60px;
+    height: 60px;
+  }
+}

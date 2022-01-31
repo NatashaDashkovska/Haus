@@ -1,0 +1,50 @@
+.article {
+  padding-top: 60px;
+  padding-bottom: 59px;
+  @include for-size(desktop) {
+    display: flex;
+  }
+}
+
+.article__image {
+  display: block;
+  margin-bottom: 26px;
+  margin-right: auto;
+  margin-left: auto;
+  @include for-size(desktop) {
+    margin-right: 110px;
+    margin-bottom: 0;
+  }
+}
+
+.article__title {
+  font-family: Tinos, serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.05;
+  text-align: center;
+  margin-bottom: 13px;
+  @include for-size(desktop) {
+    margin-bottom: 154px;
+    font-size: 64px;
+    line-height: 1.25;
+    text-align: start;
+  }
+}
+
+.article__text {
+  margin-bottom: 35px;
+
+  font-size: 18px;
+  line-height: 1.78;
+}
+
+.article__btn {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: $primary-text-color;
+  text-decoration: none;
+}

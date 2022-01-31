@@ -60,7 +60,7 @@
           <a class="hero-btn" href="">Shop ALL</a>
         </div>
       </section>
-      <!__ Отзывы  __>
+      <!-- Отзывы  -->
       <!-- <section class="container">
         <h2 class="visually-hidden">Reviews</h2>
         <ul class="reviews__list">
@@ -86,7 +86,7 @@
           </li>
         </ul>
       </section> -->
-      <!__ Секция товаров __>
+      <!-- Секция товаров -->
       <!-- <section class="container goods">
         <h2 class="goods__title">
           Made with natural ingredients, nothing fake
@@ -95,10 +95,15 @@
         <ul class="goods__list">
           <li class="goods__item">
             <img
+              srcset="
+                ./images/sampler_kit.jpg    1x,
+                ./images/sampler_kit@2x.jpg 2x
+              "
+              sizes="382px"
               src="./images/sampler_kit.jpg"
-              width="382"
               alt="bottles of drinks on the table"
             />
+
             <h3 class="goods__item-title">The Sampler Kit</h3>
             <p class="goods__item-description">
               Try a variety of Haus flavors with our customizable four-bottle
@@ -109,10 +114,12 @@
           <li class="goods__item">
             <div class="bestseller-thumb">
               <img
+                srcset="./images/jalapeno.jpg 1x, ./images/jalapeno@2x.jpg 2x"
+                sizes="382px"
                 src="./images/jalapeno.jpg"
-                width="382"
                 alt="bottle of drink"
               />
+
               <p class="bestseller-mark">best<br />seller</p>
             </div>
             <h3 class="goods__item-title">Grapefruit Jalapeño</h3>
@@ -125,10 +132,15 @@
           <li class="goods__item">
             <div class="bestseller-thumb">
               <img
+                srcset="
+                  ./images/citrus_flower.jpg    1x,
+                  ./images/citrus_flower@2x.jpg 2x
+                "
+                sizes="382px"
                 src="./images/citrus_flower.jpg"
-                width="382"
                 alt="bottle of drink"
               />
+
               <p class="bestseller-mark">best<br />seller</p>
             </div>
             <h3 class="goods__item-title">Citrus Flower</h3>
@@ -140,9 +152,15 @@
           </li>
         </ul>
       </section> -->
-      <!-- <!__ Секция преимуществ __>
-      <section class="container">
-        <img src="./images/aperitifs.jpg" alt="" />
+      <!-- Секция преимуществ -->
+      <!-- <section class="container">
+        <img
+          class="advantages__img"
+          srcset="./images/aperitifs.jpg 1x, ./images/aperitifs@2x.jpg 2x"
+          src="./images/aperitifs.jpg"
+          alt="cocktails"
+        />
+
         <div class="advantages">
           <h2 class="advantages__title">An intro to apéritifs</h2>
           <p class="advantages__text">
@@ -179,14 +197,19 @@
               </p>
             </li>
           </ul>
+
           <img
+            class="advantages__img"
+            srcset="
+              ./images/easy_to_drink.jpg    1x,
+              ./images/easy_to_drink@2x.jpg 2x
+            "
             src="./images/easy_to_drink.jpg"
-            width="880"
             alt="woman take bottle and glass"
           />
         </div>
       </section> -->
-      <!__ Секция отзывов покупателей __>
+      <!-- Секция отзывов покупателей -->
       <!-- <section class="buyers-reviews">
         <div class="container">
           <h2 class="visually-hidden">Reviews</h2>
@@ -218,12 +241,12 @@
           </ul>
         </div>
       </section> -->
-      <!__ Секция статьи __>
+      <!-- Секция статьи -->
       <!-- <section class="container article">
         <img
           class="article__image"
+          srcset="./images/flavors.jpg 1x, ./images/flavors@2x.jpg 2x"
           src="./images/flavors.jpg"
-          width="550"
           alt="spices and herbs"
         />
         <div>
@@ -239,7 +262,7 @@
           <a class="article__btn" href="">LEARN MORE</a>
         </div>
       </section> -->
-      <!__ Секция контактов __>
+      <!-- Секция контактов -->
       <!-- <section class="contacts">
         <div class="container">
           <div class="contacts-block">
@@ -263,7 +286,7 @@
       </section> -->
     </main>
 
-    <!-- <!__ Footer __>
+    <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <div class="footer-block">
@@ -366,7 +389,7 @@
           <li><a class="footer__link" href="">Terms & Conditions</a></li>
         </ul>
       </div>
-    </footer> -->
+    </footer>
 
     <!__ Modal __>
     <!-- <div class="backdrop is-hidden" data-modal>

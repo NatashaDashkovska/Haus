@@ -1,0 +1,44 @@
+.buyers-reviews {
+  background-color: $primary-text-color;
+  color: $light-text-color;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.buyers-reviews__list {
+  padding: 95px 0px 50px;
+
+  display: flex;
+}
+
+.buyers-reviews__text {
+  font-size: 18px;
+  line-height: 1.78;
+  margin-bottom: 17px;
+}
+
+.reviewer-name {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.reviewer-title {
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: capitalize;
+
+  color: #8a8a8a;
+}
+
+.buyers-reviews__item {
+  width: calc((100%-2 * 185px) / 3);
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-right: 185px;
+  }
+}
