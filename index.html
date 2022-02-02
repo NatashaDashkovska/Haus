@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Haus wine-shop" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.min.css" />
@@ -21,7 +22,7 @@
             <a class="navigation__link" href="">our story</a>
           </li>
         </ul>
-        <a class="logo" href="/">
+        <a class="logo" href="./index.html">
           <svg>
             <use href="./images/sprite.svg#icon-logo"></use>
           </svg>
@@ -48,7 +49,7 @@
             srcset="./images/hero.jpg 1x, ./images/hero@2x.jpg 2x"
             media="(min-width: 480px)"
           />
-          <img src="./images/hero.jpg" alt=" " />
+          <img src="./images/hero.jpg" alt="party" />
         </picture>
         <div class="hero">
           <h1 class="hero__title">Alcohol for the modern drinker</h1>
@@ -61,7 +62,7 @@
         </div>
       </section>
       <!-- Отзывы  -->
-      <!-- <section class="container">
+      <section class="container">
         <h2 class="visually-hidden">Reviews</h2>
         <ul class="reviews__list">
           <li class="reviews__item">
@@ -85,9 +86,9 @@
             <img src="./images/bon-appetit.svg" alt="" />
           </li>
         </ul>
-      </section> -->
+      </section>
       <!-- Секция товаров -->
-      <!-- <section class="container goods">
+      <section class="container goods">
         <h2 class="goods__title">
           Made with natural ingredients, nothing fake
         </h2>
@@ -151,9 +152,9 @@
             <a class="goods__item-btn" href="">Shop Now</a>
           </li>
         </ul>
-      </section> -->
+      </section>
       <!-- Секция преимуществ -->
-      <!-- <section class="container">
+      <section class="container">
         <img
           class="advantages__img"
           srcset="./images/aperitifs.jpg 1x, ./images/aperitifs@2x.jpg 2x"
@@ -208,9 +209,9 @@
             alt="woman take bottle and glass"
           />
         </div>
-      </section> -->
+      </section>
       <!-- Секция отзывов покупателей -->
-      <!-- <section class="buyers-reviews">
+      <section class="buyers-reviews">
         <div class="container">
           <h2 class="visually-hidden">Reviews</h2>
           <ul class="buyers-reviews__list">
@@ -240,9 +241,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Секция статьи -->
-      <!-- <section class="container article">
+      <section class="container article">
         <img
           class="article__image"
           srcset="./images/flavors.jpg 1x, ./images/flavors@2x.jpg 2x"
@@ -261,9 +262,9 @@
           </p>
           <a class="article__btn" href="">LEARN MORE</a>
         </div>
-      </section> -->
+      </section>
       <!-- Секция контактов -->
-      <!-- <section class="contacts">
+      <section class="contacts">
         <div class="container">
           <div class="contacts-block">
             <h2 class="contacts__title">Set the mood</h2>
@@ -283,7 +284,7 @@
             </ul>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Footer -->
@@ -311,7 +312,7 @@
           </div>
           <ul class="footer__list">
             <li>
-              <h5 class="footer__list-title">Explore</h5>
+              <h4 class="footer__list-title">Explore</h4>
 
               <ul>
                 <li class="footer__item">
@@ -341,7 +342,7 @@
               </ul>
             </li>
             <li>
-              <h5 class="footer__list-title">Follow</h5>
+              <h4 class="footer__list-title">Follow</h4>
 
               <ul>
                 <li class="footer__item">
@@ -358,8 +359,8 @@
                 </li>
               </ul>
             </li>
-            <li>
-              <h5 class="footer__list-title">Drop Us a Line</h5>
+            <li class="footer-list--hidden">
+              <h4 class="footer__list-title">Drop Us a Line</h4>
 
               <ul>
                 <li class="footer__item">
@@ -391,10 +392,10 @@
       </div>
     </footer>
 
-    <!__ Modal __>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="close-btn" data-modal-close>
+        <button class="close-btn" aria-label="Close modal" data-modal-close>
           <svg>
             <use href="./images/sprite.svg#icon-close-black"></use>
           </svg>
@@ -429,7 +430,7 @@
           <button class="modal-btn" type="submit">ok</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <script src="./js/modal.js"></script>
   </body>

@@ -4,7 +4,7 @@
   background-color: $hero-background-color;
   @include for-size(desktop) {
     position: absolute;
-    top: 0;
+    top: 25px;
     left: 0;
     right: 0;
     padding: 0px 15px;

@@ -5,6 +5,10 @@
 
 .footer-block {
   padding-top: 45px;
+
+  @include for-size(phone) {
+    padding: 45px 24px;
+  }
   @include for-size(desktop) {
     display: flex;
   }
@@ -27,9 +31,15 @@
 }
 
 .footer__list {
-  padding-top: 10px;
+  padding-top: 42px;
+  display: flex;
+
+  @include for-size(tablet) {
+    padding-top: 22px;
+  }
+
   @include for-size(desktop) {
-    display: flex;
+    padding-top: 22px;
   }
 }
 
@@ -58,12 +68,21 @@
 }
 
 .mark {
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 12px;
+  line-height: 1.05;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 0px;
+  }
 }
 
 .footer__item {
   margin-right: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 60px;
+  }
 
   &:not(:last-child) {
     margin-bottom: 21px;
@@ -77,5 +96,30 @@
 
   & > li:not(:last-child) {
     margin-right: 60px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 30px;
+    padding-top: 5px;
+    flex-wrap: wrap;
+    border-top: 1px solid grey;
+    & > li:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    & .footer__link {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 55px;
+  }
+}
+
+.footer-list--hidden {
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }

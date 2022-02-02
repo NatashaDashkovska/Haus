@@ -11,6 +11,9 @@
 }
 
 .reviews__item {
+  font-size: 18px;
+  line-height: 1.28;
+
   &:not(:last-child) {
     margin-bottom: 24px;
   }

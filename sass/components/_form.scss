@@ -1,8 +1,10 @@
 // Footer-form
 
 .form-block {
-  max-width: 440px;
-  margin-right: 220px;
+  @include for-size(desktop) {
+    max-width: 440px;
+    margin-right: 220px;
+  }
 }
 
 .footer-form {
@@ -10,9 +12,11 @@
   padding-right: 0;
 
   display: flex;
-  justify-content: space-between;
 
   border-bottom: 1px solid $secondary-text-color;
+  @include for-size(tablet) {
+    justify-content: space-between;
+  }
 }
 
 .form__input {
